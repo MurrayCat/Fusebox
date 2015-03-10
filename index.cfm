@@ -16,12 +16,12 @@
 	<header class="cd-header">
 		<a href="#0" class="cd-logo"><img src="img/logo.png" alt="Logo"></a>
 		<a href="#0" class="cd-3d-nav-trigger">
-			Menu
+			Menu 2
 			<span></span>
 		</a>
 	</header> <!-- .cd-header -->
 	<main>
-		
+
 		
 	</main>
 	<nav class="cd-3d-nav-container">
