@@ -51,6 +51,7 @@
   <div data-offset="20" class="grass parallax"></div>
   <div data-offset="50" class="buildings parallax"></div>
   <div class="ground"></div>
+  <
 </div>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
 <script src="js/index.js"></script> 
