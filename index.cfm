@@ -17,6 +17,7 @@
 		<a href="#0" class="cd-logo"><img src="img/logo.png" alt="Logo"></a>
 		<a href="#0" class="cd-3d-nav-trigger">
 			Menu 2
+            Header Nav
 			<span></span>
 		</a>
 	</header> <!-- .cd-header -->
