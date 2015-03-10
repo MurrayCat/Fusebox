@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
 	<title>Fusebox</title>
 </head>
 <body>
@@ -18,6 +21,7 @@
 		</a>
 	</header> <!-- .cd-header -->
 	<main>
+		
 		
 	</main>
 	<nav class="cd-3d-nav-container">
@@ -53,21 +57,7 @@
   <div class="ground"></div>
   <
 </div>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<script src="js/index.js"></script> 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+
 
 </body>
 </html>
