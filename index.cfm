@@ -7,9 +7,10 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/three.min.js"></script>
 	<title>Fusebox</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
 	</header> <!-- .cd-header -->
 	<main>
 
-		
+
 	</main>
 	<nav class="cd-3d-nav-container">
 		<ul class="cd-3d-nav">
@@ -48,16 +49,17 @@
 			</li>
 		</ul> <!-- .cd-3d-nav -->
 
-		<span class="cd-marker color-1"></span>	
+		<span class="cd-marker color-1"></span>
 	</nav> <!-- .cd-3d-nav-container -->
-<div class="scene">
+<!-- <div class="scene">
   <div data-offset="90" class="clouds parallax"></div>
   <div data-offset="30" class="trees parallax"></div>
   <div data-offset="20" class="grass parallax"></div>
   <div data-offset="50" class="buildings parallax"></div>
   <div class="ground"></div>
   <
-</div>
+</div> -->
+<div id="div1"></div>
 
 
 </body>

@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -19,9 +19,9 @@ body {
 a {
   text-decoration: none; }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 .cd-header {
@@ -375,6 +375,8 @@ main {
       font-size: 3.6rem;
       margin: 4em auto; } }
 .scene {
+  margin-top:100px;
+
   position: absolute;
   top:150px;
   bottom: 0;
@@ -432,4 +434,10 @@ main {
   left: 50%;
   margin-left: -400px;
   background: url(http://i.imgur.com/5LmAigM.png) no-repeat center;
+}
+#div1{
+  background-color:#fff !important;
+}
+canvas{
+  background-color:#fff !important;
 }

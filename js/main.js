@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
 	});
 
 	function toggle3dBlock(addOrRemove) {
-		if(typeof(addOrRemove)==='undefined') addOrRemove = true;	
+		if(typeof(addOrRemove)==='undefined') addOrRemove = true;
 		$('.cd-header').toggleClass('nav-is-visible', addOrRemove);
 		$('main').toggleClass('nav-is-visible', addOrRemove);
 		$('.cd-3d-nav-container').toggleClass('nav-is-visible', addOrRemove);
@@ -25,7 +25,7 @@ jQuery(document).ready(function($){
 	//this function update the .cd-marker position
 	function updateSelectedNav(type) {
 		var selectedItem = $('.cd-selected'),
-			selectedItemPosition = selectedItem.index() + 1, 
+			selectedItemPosition = selectedItem.index() + 1,
 			leftPosition = selectedItem.offset().left,
 			backgroundColor = selectedItem.data('color');
 
@@ -66,4 +66,27 @@ jQuery(document).ready(function($){
 	            });
 	        });
 	    });
+			var scene = new THREE.Scene();
+			var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 1, 10000);
+			var renderer = new THREE.WebGLRenderer();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			var geometry = new THREE.BoxGeometry(700, 700, 700, 10, 10, 10);
+			var material = new THREE.MeshBasicMaterial({color: 0x438fda , wireframe: true});
+			var cube = new THREE.Mesh(geometry, material);
+			var speed = float = 1.0; //how fast the object should rotate
+			scene.add(cube);
+			camera.position.z = 1900;
+			function render() {
+				requestAnimationFrame(render);
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+				//cube.transform.Rotate(Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed);
+				renderer.render(scene, camera);
+			};
+
+			render();
+		
+
 });
