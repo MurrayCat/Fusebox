@@ -59,11 +59,41 @@ jQuery(document).ready(function($){
 	            var offset = parseInt($(el).data('offset'));
 	            var translate = "translate3d(" + Math.round(offsetX * offset) + "px," + Math.round(offsetY * offset) + "px, 0px)";
 
-	            $(el).css({
-	                '-webkit-transform': translate,
-	                'transform': translate,
-	                'moz-transform': translate
-	            });
-	        });
-	    });
+            $(el).css({
+                '-webkit-transform': translate,
+                'transform': translate,
+                'moz-transform': translate
+            });
+        });
+	});
+
+	var scene = new THREE.Scene();
+	var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 1, 10000);
+
+	var renderer = new THREE.WebGLRenderer();
+	renderer.setSize(window.innerWidth, window.innerHeight);
+	document.getElementById("scene").appendChild(renderer.domElement);
+
+	var geometry = new THREE.BoxGeometry(700, 700, 700, 10, 10, 10);
+	var material = new THREE.MeshBasicMaterial({color: 0x4B96C3, wireframe: true});
+	var cube = new THREE.Mesh(geometry, material);
+	var speed = float = 0.5; //how fast the object should rotate
+	scene.add(cube);
+	
+	camera.position.z = 1000;			
+
+	function render() {
+		requestAnimationFrame(render);
+
+		cube.rotation.x += 0.01;
+		cube.rotation.y += 0.01;
+		//cube.transform.Rotate(Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed);
+
+		renderer.render(scene, camera);
+		renderer.setClearColor( 0x444444, 1 );
+	};
+
+	render();
+
+	$(window).stellar();
 });
